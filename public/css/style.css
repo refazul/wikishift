@@ -1,0 +1,27 @@
+#toc {
+    position: fixed;
+    top: 7px;
+    left: 7px;
+    width: 20em;
+}
+#toc > ul {
+    overflow-y: auto;
+}
+
+#mw-page-base,
+#mw-head-base {
+    display: none;
+}
+#content {
+    margin-top: 7px;
+}
+#content,
+#footer {
+    margin-left: 20em !important;
+    position: relative;
+    left: -25px;
+}
+
+#mw-navigation {
+    display: none;
+}
