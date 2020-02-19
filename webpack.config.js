@@ -1,6 +1,5 @@
 var webpack          = require('webpack');
 const path           = require('path');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     output            : {
@@ -16,14 +15,5 @@ module.exports = {
             'lib'     : path.resolve(__dirname, 'src', 'js', 'lib.js'),
             'constant': path.resolve(__dirname, 'src', 'js', 'constant.js'),
         }
-    },
-    optimization: {
-        minimizer: [new UglifyJsPlugin({
-            uglifyOptions: {
-                output: {
-                    comments: false
-                }
-            }
-        })]
     }
 };
