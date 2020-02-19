@@ -8,7 +8,7 @@ import ReactDOM from 'react-dom';
 
 console.log("Background");
 
-chrome.browserAction.onClicked.addListener(function(tab) {
+chrome.browserAction.onClicked.addListener(function (tab) {
     // No tabs or host permissions needed!
     chrome.tabs.executeScript({
         code: 'alert("clicked");',

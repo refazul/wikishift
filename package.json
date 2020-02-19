@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"buildjs": "webpack",
-		"buildcss": "sass --no-source-map --style compressed src/scss/style.scss:dist/css/style.css"
+		"buildjs": "webpack --watch",
+		"buildcss": "sass --no-source-map --style compressed src/scss/style.scss:dist/css/style.css --watch"
 	},
 	"repository": {
 		"type": "git",
